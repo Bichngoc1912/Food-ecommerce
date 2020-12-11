@@ -1,0 +1,415 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+
+
+body {
+    padding-top: 50px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+/*margin - padding --icon*/
+.nav-mg--icon {
+    margin: 0px;
+    padding: 15px;
+}
+
+    .nav-mg--icon li a {
+        margin: 0px;
+        padding: 0 15px;
+    }
+/*margin - padding --content*/
+.content-mg {
+    margin: 50px 0;
+}
+/*margin - padding --a*/
+.mg-a {
+    padding: 12px 12px;
+}
+
+.adv-mg {
+    margin-top: 50px;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: white;
+}
+
+.bg-color-nav {
+    background-color: #ff0080;
+}
+
+.flex-navbar {
+    display: flex;
+    height: 50px;
+    flex-wrap: nowrap;
+}
+
+    .flex-navbar > div {
+        width: auto;
+        text-align: center;
+    }
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+    .flex-container > div {
+        width: auto;
+        text-align: center;
+    }
+
+.flex-navbar--Categories {
+    display: flex;
+    flex-wrap: nowrap;
+    height: 100px;
+    margin: 0 150px;
+}
+
+    .flex-navbar--Categories > div {
+        width: auto;
+        text-align: center;
+    }
+
+        .flex-navbar--Categories > div > ul > li {
+            margin: 0 15px;
+            padding: 35px 10px;
+        }
+
+    .flex-navbar--Categories .nav-input {
+        margin: 0 15px;
+        padding: 25px 10px;
+    }
+
+    .flex-navbar--Categories .nav-icon {
+        margin: 0 15px;
+        padding: 35px 10px;
+    }
+
+        .flex-navbar--Categories .nav-icon > i {
+            padding: 0 10px;
+        }
+
+.font-color-nav {
+    color: white;
+}
+
+.bg-color--fuild {
+    background-color: #ffcce6;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.myslides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+    width: 100%;
+    height: 70vh;
+}
+/*Slideshow container*/
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+/*Caption text*/
+.Text {
+    width: 100%;
+    color: black;
+    font-size: 55pt;
+    font-family: 'Dancing Script', cursive;
+    padding: 250px 120px;
+    position: absolute;
+    bottom: 8px;
+    text-align: right;
+    animation-name: textSlide;
+    animation-duration: 4s;
+}
+
+@keyframes textSlide {
+    from {
+        color: white;
+        opacity: 0;
+    }
+
+    to {
+        color: black;
+        opacity: 50;
+    }
+}
+/*dot*/
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: #717171;
+}
+/*Fading animation*/
+.Fading {
+    -webkit-animation-name: Fading;
+    -webkit-animation-duration: 1.5s;
+    animation-name: Fading;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes Fading {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes Fading {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.font-color {
+    color: black;
+}
+
+.font-color--pink {
+    color: deeppink;
+}
+
+.font-w--bold {
+    font-weight: bold;
+}
+
+.font-s--25 {
+    font-size: 25px;
+}
+
+.font-s--30 {
+    font-size: 30pt;
+}
+
+.font-fa--Nerko {
+    font-family: 'Nerko One', cursive;
+}
+/*font ice-cream */
+.font-fa--Open {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.text_a--center {
+    text-align: center;
+}
+/*width 100%*/
+.w-100 {
+    width: 100%;
+}
+/*height 40px*/
+.h-40 {
+    height: 40px;
+}
+
+.h-150 {
+    height: 150px;
+}
+
+.h-300 {
+    height: 300px;
+}
+
+.padding-20 {
+    padding: 20px 0;
+}
+
+.text-content {
+    z-index: 1;
+    position: absolute;
+    top: 5%;
+    right: 0;
+    left: 0;
+    padding-left: 0px;
+}
+
+.adv {
+    background-image: url('image/Cake/Cake-adv.jpg');
+}
+
+.overlay-blue {
+    position: absolute;
+    top: 10px;
+    left: 28px;
+    bottom: 10px;
+    right: 28px;
+    border: 1px solid #fff;
+    opacity: 1;
+}
+
+    .overlay-blue:hover {
+        animation-name: overlayblue;
+        animation-duration: 3s;
+    }
+
+@keyframes overlayblue {
+    from {
+        opacity: 0;
+        border: 1px solid #fff;
+    }
+
+    to {
+        opacity: 30;
+        border: 1px solid #33cccc;
+    }
+}
+
+.overlay-green {
+    position: absolute;
+    top: 10px;
+    left: 28px;
+    bottom: 10px;
+    right: 28px;
+    border: 1px solid #fff;
+    opacity: 1;
+}
+
+    .overlay-green:hover {
+        animation-name: overlaygreen;
+        animation-duration: 3s;
+    }
+
+@keyframes overlaygreen {
+    from {
+        opacity: 0;
+        border: 1px solid #fff;
+    }
+
+    to {
+        opacity: 30;
+        border: 1px solid #79d279;
+    }
+}
+
+.overlay-pink {
+    position: absolute;
+    top: 10px;
+    left: 28px;
+    bottom: 10px;
+    right: 28px;
+    border: 1px solid #fff;
+    opacity: 1;
+}
+
+    .overlay-pink:hover {
+        animation-name: overlaypink;
+        animation-duration: 3s;
+    }
+
+@keyframes overlaypink {
+    from {
+        opacity: 0;
+        border: 1px solid #fff;
+    }
+
+    to {
+        opacity: 30;
+        border: 1px solid #ff80bf;
+    }
+}
+
+.btn-content {
+    width: auto;
+    border-radius: 25px;
+    border-color: cornflowerblue;
+    border: 1px solid;
+}
+
+    .btn-content:hover {
+        background-color: deeppink;
+        border: none;
+        border-color: none;
+        color: white;
+    }
+
+.btn-readmore {
+    border-radius: 25px;
+    color: white;
+    margin: 50px 100px;
+    background-color: black;
+}
+
+.btn-bgcolor-pink {
+    background-color: hotpink;
+    border-radius: 20px;
+    color: white;
+    height: auto;
+}
+
+.col-mg-r {
+    margin-right: 15px;
+}
+
+.col-mg-l {
+    margin-left: 31px;
+}
+
+.col-md-6 {
+    width: 48%;
+}
+
+.bg-img-1 {
+    background-image: url('image/Cake/Ice-cake1.jpg');
+    background-size: cover;
+}
+
+.bg-img-2 {
+    background-image: url('image/Cake/ice-cake2.jpg');
+    background-size: cover;
+}
+
+.list-products .product-item {
+    margin-top: 0;
+    margin-left: 75px;
+    float: left;
+}
+
+    .list-products .product-item img {
+        width: 300px;
+        height: 300px;
+        border: #c1d7d7 solid 10px;
+        border-radius: 50%;
+    }

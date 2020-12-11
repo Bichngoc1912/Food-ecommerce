@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top bg-color-nav ">
+        <div class="flex-navbar ">
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav font-color-nav nav-mg--icon">
+                    <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="far fa-envelope"></i></a></li>
+                    <li><a href="#"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </div>
+            <div class="font-color-nav nav-mg--icon display">
+                <p>Call us: 0397162123 | Gmail: info@gmail.com</p>
+            </div>
+        </div>
+    </div>
+    <div class="flex-navbar--Categories">
+        <div>
+            <ul id="categories" class="nav navbar-nav ">
+            </ul>
+        </div>
+        <div class="input-group nav-input">
+            <input id="search" type="text" class="form-control" name="search" placeholder="search">
+            <span class="input-group-addon"><i class="fas fa-search"></i></span>
+        </div>
+        <div class="nav-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-user"></i>
+        </div>
+    </div>
+    <div class="">
+        @RenderBody()
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    <script>
+        var categories = ['Home', 'Collection', 'Shop', 'Natural', 'Candys', 'Shooters', 'Pages']
+        var listCategories = categories.map(function (item) {
+            var x = document.getElementById('categories');
+            x.innerHTML += `<li>` + item + `<i class="fas fa-caret-down"></i>` + `</li>`
+        })
+    </script>
+</body>
+</html>
